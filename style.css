@@ -1,0 +1,42 @@
+:root {
+  --header-height: 100px;
+  --table-cell-padding: 15px;
+  --header-button-container-margin: 5px;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  height:var(--header-height);
+}
+
+.header-button-container {
+  margin: var(--header-button-container-margin);
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+table {
+    /* Ensure sticky table header gets a border*/
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+th, td {
+  padding: var( --table-cell-padding);
+  vertical-align: middle;
+}
+
+th {
+  background-color: lightgrey;
+  text-align: center;
+  position: sticky;
+  top: var(--header-height);
+}
+
+td {
+  text-align: left;
+}

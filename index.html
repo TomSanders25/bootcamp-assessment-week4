@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive TODO List</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            TODO List
+        </h1>
+        <div class="header-button-container">
+            <button id="generateSampleData">Generate Sample Data</button>
+            <button id="addItemButton">Add TODO list item</button>
+        </div>
+    </header>
+    <main>
+        <section id="devTest">
+
+        </section>
+        <section id="TodoListSection">
+            <!-- <table id="TodoListTable" class="ui-widget ui-widget-content"> -->
+                <table id="TodoListTable">
+                    <thead>
+                        <!-- <tr class="ui-widget-header "> -->
+                        <tr class="TodoListTableHeader">
+                            <th></th>                   <!-- 'Edit' column -->
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Date created</th>
+                            <th>Date last edited</th>
+                            <th>Date to complete</th>
+                            <th>Status</th>
+                            <th>Priority</th>
+                            <th></th>                   <!-- 'Delete' column-->
+                        </tr>
+                    </thead>
+                <tbody id="TodoListTableBody">
+                    <!-- <tr>
+                        <td>Mow the grass</td>
+                        <td>Mow the grass in the front and back gardens</td>
+                        <td>26th June 2025</td>
+                        <td>28th June 2025</td>
+                        <td>30th June 2025</td>
+                        <td>Not Started</td>
+                        <td>Medium</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
